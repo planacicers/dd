@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>尊享庄园 | 顶级美式别墅豪宅定制_高端地产私人鉴赏</title>
+    <meta name="description" content="尊享庄园提供顶级美式别墅豪宅销售与定制服务。位于比弗利山庄风格，配备恒温泳池、私人酒窖及智能家居系统，为您定义不凡的建筑美学与奢华生活。">
+    <meta name="keywords" content="美式别墅,豪宅设计,顶级地产,比弗利山庄风格,私人庄园,高端房产,室内设计">
+    
+    <link rel="canonical" href="https://www.yourdomain.com/" />
+
+    <style>
+        /* 基础样式保持并优化 */
+        :root {
+            --primary-color: #2c3e50; 
+            --accent-color: #c0a080;  
+            --text-light: #f4f4f4;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Georgia', serif, "Microsoft YaHei", "微软雅黑";
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+
+        /* 导航栏 */
+        nav {
+            background: rgba(44, 62, 80, 0.98);
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent-color);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li { margin-left: 30px; }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover { color: var(--accent-color); }
+
+        /* 英雄横幅区 */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #a68a6d; transform: scale(1.05); }
+
+        /* 介绍区域 */
+        .section {
+            padding: 100px 10% 80px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: var(--accent-color);
+            margin: 15px auto;
+        }
+
+        /* 特色展示网格 */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: #fff;
+            border: 1px solid #eee;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover { box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+        .feature-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .feature-info { padding: 25px; }
+        .feature-info h3 { margin-top: 0; color: var(--primary-color); }
+
+        /* 详情区 */
+        .details-box {
+            display: flex;
+            flex-wrap: wrap;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .details-text { flex: 1; padding: 80px 10%; min-width: 320px; }
+        .details-image { 
+            flex: 1; 
+            min-width: 320px; 
+            background: url('https://images.unsplash.com/photo-1600585154340-be6199f7e009?auto=format&fit=crop&w=800&q=80') center/cover;
+            min-height: 450px;
+        }
+
+        /* 页脚 */
+        footer {
+            background: #1a1a1a;
+            color: #bbb;
+            padding: 60px 10% 30px;
+            text-align: center;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .section { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">LUXE ESTATE</a>
+        <ul class="nav-links">
+            <li><a href="#about">关于项目</a></li>
+            <li><a href="#features">核心设施</a></li>
+            <li><a href="#details">详细参数</a></li>
+            <li><a href="#contact">联系鉴赏</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <h1>比弗利山庄 · 传世府邸</h1>
+            <p>融合经典美式精神与现代极简美学，为您打造私密而尊贵的家族庄园。</p>
+            <a href="#contact" class="btn">预约私人鉴赏</a>
+        </header>
+
+        <section class="section" id="about">
+            <h2>匠心独运的建筑艺术</h2>
+            <p>我们不仅仅是在建造房屋，更是在创造一种传承。本项目占地2.5英亩，由国际顶级设计团队担纲，将石材的厚重感与玻璃的通透感完美融合。</p>
+        </section>
+
+        <section class="section" id="features" style="background: #f9f9f9;">
+            <h2>豪宅核心设施</h2>
+            <div class="features">
+                <article class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="恒温无边泳池">
+                    <div class="feature-info">
+                        <h3>无边际恒温泳池</h3>
+                        <p>270度景观视野，采用最先进的水质净化与恒温系统。</p>
+                    </div>
+                </article>
+                <article class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80" alt="现代奢华开放式厨房">
+                    <div class="feature-info">
+                        <h3>专业级奢华厨房</h3>
+                        <p>配备全套顶级嵌入式厨电，中西双厨设计满足各种宴请需求。</p>
+                    </div>
+                </article>
+                <article class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="总统级主人房">
+                    <div class="feature-info">
+                        <h3>总统级套房</h3>
+                        <p>150平米超大独立空间，包含私人书房、壁炉及景观露台。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="details-box" id="details">
+            <div class="details-text">
+                <h2>全方位奢华体验</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 20px;">✓ <strong>私人影院：</strong> 124英寸巨幕，杜比全景声沉浸式体验。</li>
+                    <li style="margin-bottom: 20px;">✓ <strong>酒窖：</strong> 恒温恒湿，可收藏超过2500支珍稀年份红酒。</li>
+                    <li style="margin-bottom: 20px;">✓ <strong>科技住宅：</strong> 全屋5G覆盖，一键控制灯光、温度与安防。</li>
+                    <li style="margin-bottom: 20px;">✓ <strong>康体中心：</strong> 包含桑拿房、瑜伽室及专业健身器材。</li>
+                </ul>
+            </div>
+            <div class="details-image"></div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>开启您的尊享之旅</h3>
+            <p>地址：中国·上海/北京 核心别墅区尊享庄园销售中心</p>
+            <p>VIP 专线：400-888-9999</p>
+            <p>官方邮箱：concierge@luxe-estate.com</p>
+        </div>
+        <p style="font-size: 12px; margin-top: 40px; color: #666;">&copy; 2025 LUXE ESTATE. 版权所有。 沪ICP备88888888号</p>
+    </footer>
+
+</body>
+</html>
